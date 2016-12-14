@@ -1055,15 +1055,15 @@ implicit lazy val PriorityLevelFormat: JsonFormat[com.example.PriorityLevel] = n
 // DO NOT EDIT MANUALLY
 package generated
 trait CustomProtocol extends
-  generated.GreetingHeaderFormats with
+  java.util.DateFormats with
   sjsonnew.BasicJsonProtocol with
+  generated.PriorityLevelFormats with
+  generated.GreetingHeaderFormats with
   generated.SimpleGreetingFormats with
   generated.GreetingExtraImplFormats with
   generated.GreetingWithAttachmentsFormats with
   generated.GreetingsFormats with
-  generated.GreetingExtraFormats with
-  java.util.DateFormats with
-  generated.PriorityLevelFormats
+  generated.GreetingExtraFormats
 object CustomProtocol extends CustomProtocol""".stripMargin
 
   val growableAddOneFieldExample = """{
