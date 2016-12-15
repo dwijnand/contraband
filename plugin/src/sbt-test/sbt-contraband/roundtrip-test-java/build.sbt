@@ -18,6 +18,7 @@ lazy val root = (project in file(".")).
       }
     },
     contrabandJavaOption in generateContrabands in Compile := "com.example.Maybe",
-    libraryDependencies += "com.eed3si9n" %% "sjson-new-scalajson" % "0.6.0"
+    libraryDependencies += "com.eed3si9n" %% "sjson-new-scalajson" % "0.6.1-dnw",
+    resolvers += Resolver.mavenLocal
     // scalacOptions += "-Xlog-implicits"
   )

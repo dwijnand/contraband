@@ -4,6 +4,7 @@ lazy val root = (project in file(".")).
   enablePlugins(ContrabandPlugin, JsonCodecPlugin).
   settings(
     name := "example",
-    libraryDependencies += "com.eed3si9n" %% "sjson-new-scalajson" % "0.6.0"
+    libraryDependencies += "com.eed3si9n" %% "sjson-new-scalajson" % "0.6.1-dnw",
+    resolvers += Resolver.mavenLocal
     // scalacOptions += "-Xlog-implicits"
   )
